@@ -78,21 +78,54 @@ h3 {
     padding-bottom: 0.5px;
     padding: 10px;
 }
+#mokuji {
+    background-color: white;
+    width: 30%;
+    padding: 2%;
+    padding-left: 0%;
+    margin: 0px 10px;
+    max-width: 400px;
+    
+}
+
+.sidebar {
+    margin-bottom: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+    padding-left: 20px;
+    
+}
+ul .mokuji a{
+    display: block;
+
+}
+ul .mokuji li{
+    padding: 2%;
+    
+}
+ul .mokuji ol li{
+    padding: 2%;
+    padding-left: 0%;
+
+}
 #main1 {
     background-color: rgba(180, 250, 194, 0.589);
-    margin: 0px auto;
+    margin: 0px;
     
-    padding: 2% 10%;
+    padding: 2% 5%;
+    display: flex;
 
 
 }
 
 #main2{
     background-color: rgb(255, 255, 255);
-    margin: 0px auto;
+    margin: 0px;
 
-    padding: 5% 10%;
-    width: 1000px;
+    padding: 5% 5%;
+    max-width: 1000px;
+    
     /* max-width: 700px; */
 }
 
@@ -127,8 +160,12 @@ h3 {
     text-decoration: underline;
 }
 
-.red {
+.blood {
     color: brown;
+}
+
+.red {
+    color: rgb(255, 81, 0);
 }
 
 .orange {
@@ -212,6 +249,7 @@ details {
   border: 1px solid #aaa;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
+  background-color: #fffafa;
 }
 
 summary {
@@ -222,9 +260,12 @@ summary {
 
 details[open] {
   padding: 0.5em;
+  background-color: #fffafa;
 }
 
 details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
+
+
