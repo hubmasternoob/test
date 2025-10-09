@@ -59,7 +59,7 @@ li {
     padding: 10px;
     border-bottom: solid 3px gray;
     position: relative;
-    width: 1680px;
+    min-width: 1680px;
 }
 
 /*
@@ -80,15 +80,19 @@ h3 {
     padding: 10px;
 }
 #mokuji {
-    background-color: white;
+    /* background-color: white; */
     width: 30%;
-    padding: 2%;
-    padding-left: 0%;
-    margin: 0px 10px;
-    max-width: 400px;
     
+    max-width: 400px;
 }
 
+.mokuji-in{
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+    padding-left: 5%;
+    
+    margin: 0px 10px;
+}
 .sidebar {
     margin-bottom: 50px;
     position: sticky;
@@ -96,18 +100,23 @@ h3 {
     top: 20px;
     padding-left: 20px;
     
+    
+    
 }
 ul .mokuji a{
     display: block;
+    
 
 }
 ul .mokuji li{
     padding: 2%;
     
+    
 }
 ul .mokuji ol li{
     padding: 2%;
     padding-left: 0%;
+    
 
 }
 #main1 {
