@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <script src="mh.js"></script>
         <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
     </head>
     <body>
@@ -17,12 +18,12 @@
             <div class="example3">
                 <p>☆令和最新版☆</p>
             </div>
-            <nav>
-            <ul>
-                <il><a href="index.html">Bloodborne</a></il>
-                <il><a href="mh.html">MonsterHunterWilds</a></il>
-            </ul>
-            </nav>
+            <form name="pullForm">
+                <select name="pullMenu" onChange="screenChange()" class="selectlink" >
+                    <option value="index.html">血晶石マラソン</option>
+                    <option value="mh.html">巨戟アーティア</option>
+                </select>
+            </from>
         </div>
         <div class="background">
             <div id="main">
