@@ -1,810 +1,915 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【Bloodborne】地底人になるまで</title>
-    <link rel="stylesheet" href="index.css">
-
-</head>
-
-<body>
-    <div id="headline">
-        <h1>地底人になるまで</h1>
-        <div class="example3">
-            <p>☆令和最新版☆</p>
-        </div>
-    </div>
-    
-    <div id="main1">
-        <aside id="mokuji">
-            <div class="sidebar">
-                <div class="mokuji-in">
-                <div class="mokuji">
-            <a href="#intro">はじめに</a>
-            <ul>
-            <li><a href="#what">血晶石マラソンとは</a></li>
-            <li><a href="#why">なんでマラソンするの？</a></li>
-            <li><a href="#how">マラソンができるようになるまで</a></li>
-            </ul>
-
-            <a href="#how">マラソンができるようになるまで</a>
-            <ol>
-            <li><a href="#first">本編で聖杯を入手</a></li>
-            <li><a href="#second">深度5までの聖杯ダンジョンを攻略</a></li>
-            <li><a href="#third">追加儀法の付いたダンジョンの生成</a></li>
-            </ol>
-            
-            <a href="#about">血晶石について</a>
-            <ul>
-            <li><a href="#rank">血晶石のランク</a></li>
-            <li><a href="#option">血晶石の効果</a></li>
-            <li><a href="#curse">呪いの効果</a></li>
-            </ul>
-            <a href="#start">マラソンスタート！</a>
-            <ul>
-            <li><a href="#physics">1.強化の血晶石</a></li>
-            <li><a href="#hp">2.愚者</a></li>
-            <li><a href="#20">3.深淵血晶</a></li>
-            </ul>
-        </div>
-            </div></div>
-        </aside>
-        
-        <div id="main2">
-        
-        <div class="title">
-            <h2 id="intro">はじめに</h2>
-        </div>
-
-        <div class="main">
-            <div class="subtitle">
-                <h3 id="what"><span class="blood">血晶石</span>マラソンとは</h3>
-            </div>
-
-            <div class="sentence">
-                <p><span class="blue bold">聖杯ダンジョン</span>で特定の敵を倒して手に入る<span class="blood bold">血晶石</span>を厳選するよ！良いのが手に入ったら（諦めたら）おしまい！</p>
-            </div>
-
-            <div class="subtitle">
-                <h3 id="why">なんでマラソンするの？</h3>
-            </div>
-
-            <div class="sentence">
-                <p>手に入る血晶石はすべて<span class="bold orange">ランダム</span>！ランクも<span class="underline bold">1～20</span>まで！<br>
-                    <span class="bold">本編</span>で手に入る物理を高める血晶石（強化の儒血晶）は最大で<spac class="bold">19.8%</spac><br>
-                    しかし、<span class="bold blue">聖杯ダンジョン</span>なら<span class="red bold">27.2%</span>に！<br>
-                    3つ付けたら、<span class="bold">22.2%</span>の差に！<br>
-                    血晶石を<span class="bold">4つ</span>付けてるようなもの！<br>
-                <div class="center letter-spacing bold">＼＼マラソンしなきゃ／／</div>
-                </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>【Bloodborne】地底人になるまで</title>
+        <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+    </head>
+    <body>
+        <div class="headline">
+            <h1>地底人になるまで</h1>
+            <div class="example3">
+                <p>☆令和最新版☆</p>
             </div>
         </div>
+        <div class="background">
+            <div id="main">
+                <div class="title">
+                    <h2 id="intro">はじめに</h2>
+                </div>
+                <div class="main">
+                    <div class="subtitle">
+                        <h3 id="what"><span class="blood">血晶石</span>マラソンとは</h3>
+                    </div>
+                    <div class="sentence">
+                        <p><span class="blue bold">聖杯ダンジョン</span>で特定の敵を倒して手に入る<span class="blood bold">血晶石</span>を厳選するよ！良いのが手に入ったら（諦めたら）おしまい！</p>
+                    </div>
+                    <div class="subtitle">
+                        <h3 id="why">なんでマラソンするの？</h3>
+                    </div>
+                    <div class="sentence">
+                        <p>手に入る血晶石はすべて<span
+                                class="bold orange">ランダム</span>！ランクも<span
+                                class="underline bold">1～20</span>まで！<br>
+                            <span
+                                class="bold">本編</span>で手に入る物理を高める血晶石（強化の儒血晶）は最大で<span
+                                class="bold">19.8%</span><br>
+                            しかし、<span class="bold blue">聖杯ダンジョン</span>なら<span
+                                class="red bold">27.2%</span>に！<br>
+                            3つ付けたら、<span class="bold">22.2%</span>の差に！<br>
+                            血晶石を<span class="bold">4つ</span>付けてるようなもの！<br>
+                            <div
+                                class="center letter-spacing bold">＼＼マラソンしなきゃ／／</div>
+                        </p>
+                    </div>
+                </div>
+                <div class="title">
+                    <h2 id="how">マラソンができるようになるまで</h2>
+                </div>
+                <div class="main">
+                    <div class="subtitle">
+                        <p>マラソンをできるようになるまでは、大まかに3つの過程があります。
+                        </p>
+                    </div>
+                    <div class="sentence">
+                        <ol class="bold">
+                            <li>本編で<span class="red">聖杯</span>を入手</li>
+                            <li><span class="red">深度5</span>までの聖杯ダンジョンを攻略</li>
+                            <li><span class="red">追加儀法</span>の付いたダンジョンの生成</li>
+                        </ol>
+                        <p>普通に攻略すると、<span
+                                class="bold">10時間</span>ぐらいかかるのでのんびりやりましょう。ルートを覚えている人だったら、5時間ぐらいで終わるのかも。</p>
+                    </div>
+                    <div class="subtitle">
+                        <h3 id="first">1.本編で<span class="red">聖杯</span>を入手</h3>
+                    </div>
+                    <div class="sentence">
+                        <p>聖杯ダンジョンには<span
+                                class="bold red">聖杯</span>がなければ行くことができません。まずは、<span
+                                class="bold">本編</span>を進めて以下の聖杯を手に入れましょう。
+                        </p>
+                        <table>
+                            <tr>
+                                <th>聖杯</th>
+                                <th>入手場所</th>
+                            </tr>
+                            <tr>
+                                <td><span class="red">トゥメル遺跡</span></td>
+                                <td>ボス：血に渇いた獣</td>
+                            </tr>
+                            <tr>
+                                <td><span class="red">病めるローラン</span></td>
+                                <td>ボス：アメンドーズ</td>
+                            </tr>
+                            <tr>
+                                <td><span class="red">イズの碑</span></td>
+                                <td>ボス：エーブリエタース</td>
+                            </tr>
+                        </table>
+                        <p>聖杯の他に、本編でしか手に入らない素材があるので取っておきましょう。</p>
+                        <table>
+                            <tr>
+                                <th>素材</th>
+                                <th>入手場所</th>
+                            </tr>
+                            <tr>
+                                <td>真珠ナメクジ</td>
+                                <td>ビルゲンワース</td>
+                            </tr>
+                            <tr>
+                                <td>生きているヒモ</td>
+                                <td>メンシスの悪魔：メンシスの脳</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <div class="subtitle">
+                        <h3 id="second">2.<span
+                                class="red">深度5</span>までの聖杯ダンジョンを攻略</h3>
+                    </div>
+                    <div class="sentence">
+                        <p><span class="bold red">深度5</span>の<span
+                                class="bold red">トゥメル=イル</span>、<span
+                                class="bold red">深きローラン</span>、<span
+                                class="bold red">イズ</span>まで攻略しましょう。道中での宝箱からは聖杯の生成や追加儀法に使うものがたくさんあるので寄り道もしましょう。<br>
+                            <br>
+                            各ダンジョン内で拾える素材
+                            <details>
+                                <summary>開く</summary>
+                                <span class="blue">青文字：灯り前脇道</span><br>
+                                黒文字：本道<br>
+                                <span class="red">赤文字：ボス前脇道</span><br>
+                                <table width="100%">
+                                    <tr>
+                                        <th>聖杯</th>
+                                        <th>第一層</th>
+                                        <th>第二層</th>
+                                        <th>第三層</th>
+                                        <th>第四層</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&5969a1e419"
+                                                target="_blank">1.トゥメル遺跡</a></td>
+                                        <td></td>
+                                        <td>血【2】×2</td>
+                                        <td>血【2】 ×2<br>
+                                            カビ【1】×3<br>
+                                            <span class="red">
+                                                カビ【1】×3</span><br>
+                                            <span class="red">血【2】×4</span>
+                                        </td>
+                                        <td>&mdash;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&c9e4cd9dd3"
+                                                target="_blank">2.中央トゥメル遺跡</a></td>
+                                        <td>血【2】×2 </td>
+                                        <td><span
+                                                class="blue">僻墓の聖杯<br>血【3】×3</span></td>
+                                        <td><span
+                                                class="blue">血【3】×6<br>聖者の手首×1<br>血【2】×5<br>カビ【2】×8</span><br>聖者の手首×2<br>血【3】
+                                            ×1
+                                        </td>
+                                        <td>&mdash;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&1dd8b13551"
+                                                target="_blank">3.深きトゥメル遺跡</a></td>
+                                        <td>血【3】×1<br>聖者の手首 ×1</td>
+                                        <td>血【3】×4<br>カビ【3】×8<br><span
+                                                class="red">血【4】×2<br>霞削りの工房道具</span></td>
+                                        <td>聖者の手首×2<br>血【4】<br><span
+                                                class="red">カビ【3】×4<br>血【3】×2</span></td>
+                                        <td>血【4】×5<br>カビ【3】×6<br>血【3】×2<br><span
+                                                class="red">聖者の手首 ×3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&1e5b3f0e98"
+                                                target="_blank">4.呪われたトゥメルの冒涜</a></td>
+                                        <td>血【4】×2<br><span
+                                                class="red">血【4】×3</span></td>
+                                        <td><span
+                                                class="blue">カビ【4】×3<br>血【4】×5<br>血【5】</span><br>
+                                            血【5】×2<br>カビ【4】x2<br>
+                                            <span
+                                                class="red">血【5】×3<br>病巣の臓器×2</span></td>
+                                        <td>
+                                            カビ【4】×4<br>血【5】×4<br>聖者の頭蓋×3<br>病巣の臓器×3<br>
+                                        </td>
+                                        <td>&mdash;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&f021374c57"
+                                                target="_blank">5.トゥメル＝イル</a></td>
+                                        <td><span class="blue">血【5】</span><br>
+                                            <span
+                                                class="red">カビ【5】×2<br>血【5】×2</span></td>
+                                        <td><span
+                                                class="blue">カビ【5】×9<br>血【5】×4</span><br>
+                                            血【5】×2<br>レッドゼリー<br>
+                                            <span
+                                                class="red">黄色い背骨×2<br>血【5】×5<br>レッドゼリー</span></td>
+                                        <td><span
+                                                class="blur">黄色い背骨×2</span></td>
+                                        <td>&mdash;</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table width="100%">
+                                    <tr>
+                                        <th>聖杯</th>
+                                        <th>第一層</th>
+                                        <th>第二層</th>
+                                        <th>第三層</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&9559d83387"
+                                                target="_blank">4.病めるローラン</a></td>
+                                        <td><span
+                                                class="blue">カビ【4】<br>血【4】</span><br>
+                                            血【5】x2<br>カビ【4】x2<br>
+                                            <span
+                                                class="red">血【4】×3<br>カビ【4】x2</span></td>
+                                        <td><span
+                                                class="blue">獣の爪<br>血【4】×2<br>血【5】×3<br>死血花のつぼみ
+                                                ×5</span><br>
+                                            <span class="red">血【4】×4</span></td>
+                                        <td>
+                                            血【5】<br>カビ【4】×3<br>
+                                            <span
+                                                class="red">ローランの落とし子×4<br>大輪の死血花×6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a
+                                                href="https://kamikouryaku.net/bloodborne/?&d4f2fe383f"
+                                                target="_blank">5.深きローラン</a></td>
+                                        <td><span
+                                                class="blue">血【5】×3</span></td>
+                                        <td>大輪の死血花×4<br>血【5】×3<br>レッドゼリー<br>ローランの落とし子×2
+                                            <td><span
+                                                    class="blue">レッドゼリー</span></td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <table width="100%">
+                                        <tr>
+                                            <th>聖杯</th>
+                                            <th>第一層</th>
+                                            <th>第二層</th>
+                                            <th>第三層</th>
+                                        </tr>
+                                        <tr>
+                                            <td><a
+                                                    href="https://kamikouryaku.net/bloodborne/?&3e4e83ffc0"
+                                                    target="_blank">5.イズの碑</a></td>
+                                            <td>
+                                                <span
+                                                    class="red">血【5】×3</span></td>
+                                            <td>
+                                                血【5】×2<br>真珠ナメクジ×2<br>
+                                                <span
+                                                    class="red">真珠ナメクジ×2<br>血【5】×5</span></td>
+                                            <td>黄色い背骨×3<br>カビ【5】×5<br>レッドゼリー×2<br>聖者の頭蓋×6<br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </details>
+                                <br>
+                                僻墓は異常者装備が買えるようになるだけなので血晶石マラソンでは必要ありません。<br>
+                                <br>血晶石マラソンをするためには、<span
+                                    class="bold">追加儀法</span>が付けられる<span
+                                    class="bold red">汎聖杯</span>をダンジョン内で取得する必要があります。すぐに血晶石マラソンをしたい人は、<span
+                                    class="red">オレンジ文字</span>の聖杯だけでOKです。
+                            </p><br>
+                            <table>
+                                <tr>
+                                    <th>聖杯</th>
+                                    <th>入手場所</th>
+                                </tr>
+                                <tr>
+                                    <td><span
+                                            class="red">トゥメル=イルの汎聖杯</span></td>
+                                    <td>トゥメル＝イル 第二層 ボスドロップ</td>
+                                </tr>
+                                <tr>
+                                    <td>不吉なるトゥメル=イルの汎聖杯</td>
+                                    <td>トゥメル＝イル 第三層 ショップ</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="red">深きローランの汎聖杯</span></td>
+                                    <td>深きローラン 第三層 ボスドロップ</td>
+                                </tr>
+                                <tr>
+                                    <td>不吉なる深きローランの汎聖杯</td>
+                                    <td>深きローラン 第三層 ショップ</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="red">イズの汎聖杯</span></td>
+                                    <td>イズの碑 第三層 ボスドロップ</td>
+                                </tr>
+                                <tr>
+                                    <td>不吉なるイズの汎聖杯</td>
+                                    <td>イズの碑 第三層 ショップ</td>
+                                </tr>
+                            </table><br>
+                            <p>聖杯文字検索における参加条件は、<span
+                                    class="bold red">「参加する聖杯を持っていること」</span>なので、汎聖杯は<span
+                                    class="bold">作成する必要はありません</span>。<br>
+                                <br>
+                                <details><summary>各ダンジョンの特徴について</summary>
+                                    それぞれの聖杯で落とす血晶石の形は決まってます。<br><br>
+                                    <table>
+                                        <tr>
+                                            <td>トゥメル=イル</td>
+                                            <td>放射＊</td>
+                                        </tr>
+                                        <tr>
+                                            <td>僻墓</td>
+                                            <td>三角△</td>
+                                        </tr>
+                                        <tr>
+                                            <td>深きローラン</td>
+                                            <td>欠損☽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>イズ</td>
+                                            <td>三角△</td>
+                                        </tr>
+                                    </table>
+                                    <p>基本的に二つ名武器を含めれば、どの武器も放射放射三角（＊＊△）の組み合わせがあるので物理型であればトゥメル=イルとイズだけでひとまずはOKということです。しかし、神秘用の血晶石を集める際に深きローランに行ったり、二つ名武器や強力なカレル文字を手にいるれる際に僻墓や不吉なる聖杯に行く可能性があるので入手していて損はありません。
+                                    </p>
+                                </details>
+                                <br>
+                                <h3 id="third">3.<span
+                                        class="red">追加儀法</span>の付いたダンジョンの生成</h3>
+                                <p><span
+                                        class="bold">汎聖杯</span>を使ってダンジョンをランダム生成する際には、<span
+                                        class="bold red">追加儀法</span>をつけて生成できます。追加儀法をつけることでダンジョンの難易度が上がるかわりに、落とす<span
+                                        class="bold">血晶石のランク</span>が上がります。<br>
+                                    <br>
+                                    基本的に、血晶石マラソンでは<span
+                                        class="bold red">死臭の供儀、</span><span
+                                        class="bold red">腐臭の供儀、</span><span
+                                        class="bold red">呪い</span>の追加儀法をつけて周回します。
+                                </p>
+                                <br>
+                                <details>
+                                    <summary>追加儀法の効果について</summary>
+                                    <ul>
+                                        <li>死臭の供儀</li>効果：一部の敵が強化（赤いオーラ化）&その敵が落とす血晶石のランクUP
+                                        <li>腐臭の供儀</li>効果：一部の敵が追加&その敵が落とす血晶石のランクUP
+                                        <li>呪い</li>効果：プレイヤーHPが半減&呪われた血晶石化
+                                        <li>不吉</li>効果：プレイヤーが侵入できるようになる
+                                    </ul>
+                                </details>
+                                <br>
+                                <p>こちらは聖杯と違って、参加条件が<span
+                                        class="bold red">「過去に対応した追加儀法を作成したことがある」</span>なので汎聖杯を使って<span
+                                        class="bold">追加儀法付きの聖杯を作成しましょう</span>。（深度は4でも5でもOK）<br>また、追加儀法の素材は二週目以降に啓蒙ショップに並ぶので、一週目ならダンジョン内で集めましょう。
+                                </p>
+                                <br>
+                                <details><summary>追加儀法に必要な素材</summary>
+                                    <p>深度5における必要素材です。</p>
+                                    <ul>
+                                        <li>死臭</li>素材：聖者の頭蓋 6個<br>場所：イズの碑 第三層
+                                        岩石の先の扉（6個）・呪われたトゥメルの冒涜 第三層（3個）
+                                        <li>腐臭</li>素材：病巣の臓器 6個<br>場所：呪われたトゥメルの冒涜
+                                        第二層 ボス前脇道（2個）・第三層（3個）
+                                        <li>呪い</li>素材：ローランの落とし子 3個<br>場所：病めるローラン
+                                        第三層 ボス前脇道（4個）・深きローラン 第二層（2個）
+                                    </ul>
+                                </details>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h2 id="about">血晶石について</h2>
+                        </div>
+                        <div class="main">
+                            <p>ここまで来たら、地底人になるための準備は整いました！ここで、今後大量に入手するであろう<span
+                                    class="blood bold">血晶石</span>について軽く説明します。<br>
+                                <br>
+                                <h3
+                                    id="rank">血晶石のランク</h3><p></p>血晶石には、ランク1～20まであり、そのランクに応じて<span
+                                    class="bold">アイテムの名前</span>が変わります。この名前を見て、目当てなものなのかを瞬時に判断できるようになりましょう！</p>
+                            <br>
+                            <table>
+                                <tr>
+                                    <th>アイテム名</th>
+                                    <th>ランク</th>
+                                </tr>
+                                <tr>
+                                    <td>血晶石【1】</td>
+                                    <td>1～4</td>
+                                </tr>
+                                <tr>
+                                    <td>血晶石【2】</td>
+                                    <td>5～7</td>
+                                </tr>
+                                <tr>
+                                    <td>血晶石【3】</td>
+                                    <td>8～10</td>
+                                </tr>
+                                <tr>
+                                    <td>濡血晶【4】</td>
+                                    <td>11～13</td>
+                                </tr>
+                                <tr>
+                                    <td>濡血晶【5】</td>
+                                    <td>14～16</td>
+                                </tr>
+                                <tr>
+                                    <td>濡血晶【6】</td>
+                                    <td>17～19</td>
+                                </tr>
+                                <tr>
+                                    <td>深淵血晶</td>
+                                    <td>20</td>
+                                </tr>
+                            </table>
+                            <br>
+                            <p>ひとまず、<span class="bold">濡血晶【6】</span>だったら<span
+                                    class="bold">17以上</span>、<span
+                                    class="bold">深淵血晶</span>だったら<span
+                                    class="bold">20</span>ということを覚えておきましょう！</p>
+                            <br>
+                            <h3 id="option">血晶石の効果</h3>
+                            <p>
+                                <span class="blood">血晶石</span>には、計3つの<span
+                                    class="bold">オプション（効果）</span>をつけることができ、それらには<span
+                                    class="red">バフの効果</span>と<span
+                                    class="blue">デバフの効果</span>があります。
+                                <br>
+                                <p>血晶石マラソンでは2つのオプションに<span
+                                        class="red">バフの効果</span>を付けるのですが、世間では一つ目の効果を<span
+                                        class="bold">1op</span>（オプション）、二つ目の効果を<span
+                                        class="bold">2op</span>と呼ぶらしいです。それぞれ、1opと2opに付く効果は主に決まっています。
+                                </p><br>
+                                <details><summary>主に使う1opに付く効果</summary>
+                                    <table>
+                                        <tr>
+                                            <th>アイテム名</th>
+                                            <th>効果</th>
+                                            <th>最大値</th>
+                                            <th>主な入手先</th>
+                                        </tr>
+                                        <tr>
+                                            <td>強化の血晶石</td>
+                                            <td>物理の攻撃力を高める</td>
+                                            <td>27.2%</td>
+                                            <td>3デブ</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">特化の血晶石</td>
+                                            <td>重打のみ攻撃力を高める</td>
+                                            <td>32.6%</td>
+                                            <td rowspan="2">死体の巨人</td>
+                                        </tr>
+                                        <tr>
+                                            <td>刺突のみ攻撃力を高める</td>
+                                            <td>32.6%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>血質の血晶石</td>
+                                            <td>血の攻撃力を高める</td>
+                                            <td>32.6%</td>
+                                            <td>血に渇いた獣、銃デブ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>神秘の血晶石</td>
+                                            <td>神秘の攻撃力を高める</td>
+                                            <td>27.2%</td>
+                                            <td>エーブリエタース</td>
+                                        </tr>
+                                        <tr>
+                                            <td>炎の血晶石</td>
+                                            <td>炎の攻撃力を高める</td>
+                                            <td>27.2%</td>
+                                            <td>旧主の番犬</td>
+                                        </tr>
+                                        <tr>
+                                            <td>雷光の血晶石</td>
+                                            <td>雷光の攻撃力を高める</td>
+                                            <td>27.2%</td>
+                                            <td>ローランの黒獣</td>
+                                        </tr>
+                                        <tr>
+                                            <td>全強化の血晶石</td>
+                                            <td>全ての攻撃力を高める</td>
+                                            <td>23.6%</td>
+                                            <td>ロマ、アメンドーズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>重い血晶石</td>
+                                            <td>筋力補正を加算する</td>
+                                            <td>+65</td>
+                                            <td>獣血の主</td>
+                                        </tr>
+                                        <tr>
+                                            <td>鋭い血晶石</td>
+                                            <td>技術補正を加算する</td>
+                                            <td>+27.2</td>
+                                            <td>旧主の番人</td>
+                                        </tr>
+                                        <tr>
+                                            <td>暖かな血晶石</td>
+                                            <td>血質補正を加算する</td>
+                                            <td>+27.2</td>
+                                            <td>血に渇いた獣、銃デブ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>冷たい血晶石</td>
+                                            <td>神秘補正を加算する</td>
+                                            <td>+65</td>
+                                            <td>トゥメルの末裔、古老</td>
+                                        </tr>
+                                        <tr>
+                                            <td>一撃の血晶石</td>
+                                            <td>溜め攻撃力を高める</td>
+                                            <td>36.3%</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>脈動する血晶石</td>
+                                            <td>HPが回復し続ける</td>
+                                            <td>+5</td>
+                                            <td>炎の魔術師</td>
+                                        </tr>
 
-        <div class="title">
-            <h2 id="how">マラソンができるようになるまで</h2>
-        </div>
+                                    </table>
+                                </details>
+                                <br>
+                                <details><summary>主に使う2opに付く効果</summary>
+                                    <table>
+                                        <tr>
+                                            <th>効果</th>
+                                            <th>最大値</th>
+                                            <th>主な入手先</th>
+                                        </tr>
+                                        <tr>
+                                            <td>HP最大時攻撃力を高める</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                        <tr>
+                                            <td>物理を高める攻撃力を高める</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HP瀕死時攻撃力を高める</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                        <tr>
+                                            <td>隙をつく攻撃力を高める</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                        <tr>
+                                            <td>溜め攻撃力を高める</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                        <tr>
+                                            <td>物理の攻撃力を加算する</td>
+                                            <td></td>
+                                            <td>トゥメル、ローラン、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>血の攻撃力を加算する</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>神秘の攻撃力を加算する</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>炎の攻撃力を加算する</td>
+                                            <td></td>
+                                            <td>ローラン、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>雷光の攻撃力を加算する</td>
+                                            <td></td>
+                                            <td>ローラン、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>遅効毒の効果を加算する</td>
+                                            <td></td>
+                                            <td>ローラン、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>劇毒の効果を加算する</td>
+                                            <td></td>
+                                            <td>ローラン、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HPが回復し続ける</td>
+                                            <td></td>
+                                            <td>ローラン</td>
+                                        </tr>
+                                        <tr>
+                                            <td>リゲイン量を高める</td>
+                                            <td></td>
+                                            <td>ローラン</td>
+                                        </tr>
+                                        <tr>
+                                            <td>スタミナ消費を抑える</td>
+                                            <td></td>
+                                            <td>トゥメル、イズ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>武器耐久度を加算する</td>
+                                            <td></td>
+                                            <td>トゥメル</td>
+                                        </tr>
+                                    </table>
+                                </details>
+                                <br>
+                            </p>
+                            <h3 id="curse">呪いの効果</h3>
+                            <p><span
+                                    class="bold red">呪いの追加儀法</span>によって、入手できる<span
+                                    class="blood bold">呪われた血晶石</span>には呪いと呼ばれる<span
+                                    class="blue bold">デバフ効果</span>が付きます。効果は計6つあります。</p>
+                            <ul>
+                                <li><span class="red">スタミナ消費</span>が増える（<span
+                                        class="bold">スタマイ</span>）</li>
+                                <li><span class="red">武器耐久度</span>を減算する（<span
+                                        class="bold">耐マイ</span>）</li>
+                                <li><span class="red">耐眷属の攻撃力</span>を弱める（）</li>
+                                <li><span class="red">耐獣の攻撃力</span>を弱める（<span
+                                        class="bold">獣マイ</span>）</li>
+                                <li><span class="red">全ての攻撃力</span>を弱める（<span
+                                        class="bold">全マイ</span>）</li>
+                                <li><span class="red">HP</span>が減り続ける（<span
+                                        class="bold">HPマイ</span>）</li>
+                            </ul>
+                            <p>操作に支障をきたしにくい<span
+                                    class="bold red">スタマイ</span>が<span
+                                    class="bold">あたり</span>です。次点で、修理を代償とした<span
+                                    class="bold">耐マイ</span>、対象が少ない<span
+                                    class="bold">眷マイ</span>が<span
+                                    class="bold">あたり</span>だと思います。<br>
+                                <details>
+                                    <summary>眷属の敵</summary>
+                                    眷属
+                                    <ul>
+                                        <li>エーブリエタース</li>
+                                        <li>ロマ</li>
+                                        <li>星界からの使者（大）</li>
+                                        <li>星界からの使者</li>
+                                        <li>脳喰らい</li>
+                                        <li>瞳の苗床</li>
+                                        <li>蛍花</li>
+                                        <li>学徒</li>
+                                        <li>星の子ら</li>
+                                    </ul>
+                                    参考：<a
+                                        href="https://bloodborne.swiki.jp/index.php?%E7%9C%B7%E5%B1%9E"
+                                        target="_blank">Bloodborne設定考察 Wiki
+                                        眷属</a>
+                                </details><br>
+                                <span
+                                    class="bold">獣マイ</span>は獣の対象が多すぎるため、扱いにくいと思います。<br>
+                                <br>
+                                <span
+                                    class="bold blue">HPマイ</span>は常に毒状態で戦うようなものであり、<span
+                                    class="bold blue">全マイ</span>は文字の通り本末転倒なのではずれです。</p>
+                            <br>
+                            <details><summary>呪いの効果量</summary>
+                                <table>
+                                    <tr>
+                                        <th>呪い効果</th>
+                                        <th>最小値</th>
+                                        <th>最大値</th>
+                                    </tr>
+                                    <tr>
+                                        <td>スタミナ消費が増える（スタマイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>武器耐久度を減算する（耐マイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>耐眷属の攻撃力を弱める（眷マイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>耐獣の攻撃力を弱める（獣マイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>全ての攻撃力を弱める（全マイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HPが減り続ける（HPマイ）</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </details>
+                            <br>
+                            <br>
+                            <div class="title">
+                                <h2 id="start">マラソンスタート！</h2></div><br>
+                            ひとまずは、汎用性が高い物理の血晶石を手に入れましょう。
+                            <br>
+                            <h3 id="physics">1.強化の血晶石</h3>
+                            <span class="bold">3デブ</span>産の<span
+                                class="bold red">「物理の攻撃力を高める」強化の濡血晶</span>は、無条件かつ物理を高めてくれるため汎用性が高いです。<br>
+                            形状は、<span class="bold">放射放射三角（＊＊△）</span>のものを集めましょう。
+                            <ul>
+                                <br>
+                                <li><span class="bold">9kv8xiyi</span></li>
+                                <span class="bold">放射：一層ボス（3デブ）</span><br>
+                                一層灯りから扉を開けて、左のはしごを進みレバー部屋へ。レバーを開けたら橋から右に落ちてボス部屋へ。
+                                <li><span class="bold">nkdye4zx</span></li>
+                                <span class="bold">三角：一層ボス（3デブ）</span><br>
+                                一層灯りから右に行ってレバー部屋へ。ボス部屋は小さめ。<br>レバー前の部屋の中央にはワープ罠があるので、アイテムが落ちている方を通るように。ワープ先は一層灯り正面の部屋。
+                            </ul><br>
+                            目標は、<span
+                                class="bold red">「物理の攻撃力を高める+27.2%」</span>です。
+                            <p>3デブは、残酷な守り人2匹と守り人の長で構成されているボスです。武器は棍棒、鉈、銃を持っている三種類が存在し、銃持ちの射線を柱などを使って切りながら棍棒や鉈の攻撃をパリィするのが安定の攻略方法です。</p>
+                            <br>
+                            <details><summary>内臓攻撃について</summary>
+                                内臓攻撃は、技術、プレイヤーのレベル、各種補正で決まる物理属性の刺突攻撃です。
+                                <br>レベルは、15・30・45・60・80・100・120・140・160・200になると大幅に強化されるので育成の参考にしてください。技術は50まで安定して増加していきます。
+                                <br><br>
+                                仕込み杖の変形後には、技術補正+15とノコギリ特効が付いているため、内臓攻撃専用の武器として優秀です。血晶石は、3デブ産の物理血晶を付けることから始め、副産物として取得できる刺突の特化血晶石で染めていくことが目標となります。最終火力では、刺突の貞子愚者の方が火力は出ますが、代用としては十分すぎる火力が出ます。また、内臓攻撃は武器の耐久値に依存せず壊れていても威力は変わらないため、耐マイでも大丈夫です。<br>ちなみに、トゥメルの3デブをワンパンできるようになるためには、レベル200、技術50、貞子愚者刺突×2、3デブ産刺突×1、爪痕×3程度で可能になります。
+                                <br><br>
+                                参考：<a
+                                    href="https://kamikouryaku.net/bloodborne/?&caa8ed794b"
+                                    target="_blank">Bloodborne(ブラッドボーン) |
+                                    神攻略wiki 内臓攻撃</a>
+                            </details><br>
+                            <p>3デブは副産物として、トゥメルでは特化、イズでは神秘、炎、雷光、特化をドロップします。確率はとても低いですが、血質、全強化なども落とします。どれも愚者までの繋ぎとして使えるため、どのビルドでもマラソンは3デブからが良いと思います。
+                            </p>
+                            <br>
+                            <h3 id="hp">2.愚者</h3>
+                            <p>そろそろ、3デブを内蔵攻撃でワンパンしてきたくなる頃合いだと思います。<br>3デブの副産物として出る刺突の特化血晶石は最大<span
+                                    class="bold">+32.6%</span>で、強化の血晶石から切り替えるだけでも大きく内蔵攻撃を高めることができます。<br><br>
+                                しかし、これを超える血晶石が条件付きで存在します。それが、2opに付く<span
+                                    class="bold red">愚者の効果「HP最大時、物理を高める」</span>です。<br>
+                                この効果は、1opに付いている効果に乗算で計算されるため、1opに「攻撃力を高める+28.7%」、2opに「HP最大時物理を高める+5.5%」が付くと<br>
+                                <br>1.287×1.055=1.357..<br>
+                                <br>と計算でき、<span
+                                    class="bold red">35.7%</span>の攻撃力アップが見込めます。3デブ産から全て乗り換えることで、<span
+                                    class="bold">計9.3%</span>アップします。<br>
+                                基本的に、<span
+                                    class="bold red">2op愚者は1opだけの血晶石の上位互換</span>になります。<br>
+                                <br>これだけ見ると<span
+                                    class="bold red">「愚者一択！」</span>と考えがちですが、ここで忘れてはいけないのは<span
+                                    class="bold blue">「HP最大時」</span>という条件があることです。<br>
+                                <span
+                                    class="bold">常にHPが最大になるように輸血液で回復しなければなりませんし、HPが最大で無ければ、3デブ産の<span
+                                        class="blue">下位互換</span>です。</span>
+                                <br>無条件で高倍率のバフをできる3デブ産の使いやすさがわかると思います。<br><br>
+                                <ul><li><span class="bold">qjpktusu</span></li>
+                                    <span
+                                        class="bold">放射：一層灯り脇道（オーラ貞子）</span><br>
+                                    一層なのですぐにマラソン可能。
+                                    <li><span
+                                            class="bold">7enpbrta</span></li><span
+                                        class="bold">放射：二層灯り先部屋、左奥（オーラ貞子）</span><br>
+                                    <li><span
+                                            class="bold">s3xhw58s</span></li><span
+                                        class="bold">放射：三層灯り先部屋、右奥（オーラ貞子）</span><br>
+                                    三層だけど灯りから近いのでおすすめ。
+                                </ul><br>
+                                <p>
+                                    雑魚マラソンは、雑魚を倒して<span
+                                        class="bold">「狩人の確かな徴」</span>を使って灯りに戻るを繰り返します。ボスと違って<span
+                                        class="bold">発見力</span>が反映されるため、<span
+                                        class="bold">カレル文字<span
+                                            class="bold red">「輝き」</span></span>と<span
+                                        class="bold red">「苗床」</span>を装備しましょう。<br>
+                                    <br>
+                                    貞子マラソンでは、<span
+                                        class="bold">ゆっくり背後まで近づいて強攻撃バクスタ</span>を入れます。
+                                </p>
+                                目標は、<span class="bold">強化</span>なら<span
+                                    class="bold red">「物理の攻撃力を高める+21%・HP最大時、物理を高める+12%」</span>、<span
+                                    class="bold">特化</span>なら<span
+                                    class="bold red">「重打or刺突の攻撃力を高める+25.2%・HP最大時、物理を高める+12%」</span>。<br>
+                                ただし、貞子のメインドロップは強化なので特化は結構時間がかかります。<br><br>
+                                放射が集まったら、三角を集めに行きましょう。
+                                <br>
+                            </p>
+                            <ul>
+                                <li><span class="bold">u4rmh8dr</span></li>
+                                <span class="bold">三角：死体の巨人（鎖）</span><br>
+                                一層灯りから左に行って脳喰らいがいるレバー部屋へ。レバー部屋前の広間にワープ罠があるので注意。
+                            </ul>
+                            <br>
+                            <p>三角の特化愚者は、イズの死体の巨人から主にドロップします。</p><br>
+                            <details><summary>死体の巨人（鎖）について</summary>
+                                <table>
+                                    <tr>
+                                        <th>弱点</th>
+                                        <th>抵抗</th>
+                                    </tr>
+                                    <tr>
+                                        <td>刺突・雷</td>
+                                        <td>重打・神秘</td>
+                                    </tr>
+                                </table>
+                                <p>左鎌の後に遅れてくる背中の鎖が特徴的なボス。慣れるまでは何度も回避硬直のカウンターで死ぬことでしょう。<br>
+                                    基本的に、鎖は鎌の攻撃と同時に後ろに回避すれば当たりません。ある程度距離が離れていれば、後ろ歩きだけでも避けられます。その後の隙を攻撃しましょう。<br>
+                                    右の鉄球の叩きつけも、右回りしていれば当たりません。しかし、叩きつける回数が1～4回のランダムなので、次の攻撃が来ないのを確認してから攻撃しましょう。<br>
+                                    HPが半分を切ると衝撃波を出す叩きつけと、鉄球からの鎖攻撃が追加されます。衝撃波は叩きつけのタイミングで前ロリすると衝撃波に引っかかるので、衝撃波の外側に回避しましょう。<br>
+                                    足を数回殴ると内蔵攻撃を入れることができます。モーションが単純な前半に左足を狙い内臓攻撃を入れましょう。腫瘍は後半に壊すとおすすめです。
+                                </p>
+                                <div class="subtitle">おすすめ武器</div>
+                                <ul>
+                                    <li>ノコギリ鉈・槍</li>
+                                    変形前R1の隙の少なさが優秀で、連続叩きつけの間を殴れる。
+                                    <li>ルドウィークの聖剣</li>
+                                    刺突が弱点なので変形後溜めR2が良い火力。攻撃判定が敵に当たる手前にあるので、腫瘍が壊しにくいので少し使いにくいかも。
+                                    <li>教会の杭</li>
+                                    変形前R1→R2のコンボが刺突で良い感じ。腫瘍に当たるとすぐに破裂してしまうため、後半に時間がかかってしまうことがある。R2のモーション中にカウンターを食らうことがあるので注意。
+                                </ul>
+                            </details>
+                            <br><br>
+                            <h3 id="20">3.深淵血晶</h3>
+                            <p>3デブを揃えた時点でも相当強いですが、さらなる高みを目指すために<span
+                                    class="red bold">深淵血晶</span>の厳選が必要になってきます。<span
+                                    class="bold">深淵血晶</span>は、最高ランクの血晶石ですが、<span
+                                    class="bold">第3層、第4層のボス</span>からしかドロップしません。そのため、マラソン効率が一気に落ちます。<br>
+                                <br>そこで、良く使われるのが<span
+                                    class="red bold">バックアップマラソン</span>と呼ばれるものです。深淵血晶を落とす<span
+                                    class="bold">ボスの前でバックアップ</span>を取り、良い血晶石が出なかったらバックアップを読み込み、<span
+                                    class="bold">何度もボスだけを倒す</span>というものです。一言で言えば、<span
+                                    class="bold red">リセマラ</span>です。<br>
+                                （正攻法ではないので、そこだけは注意です。また、マラソン中血の遺志が溜まらないのでマラソン感が出ないのも悲しい。）</p>
+                            <br>
+                            <details><summary>バックアップマラソンの方法</summary>
+                                <p><ol>
+                                        <li><span
+                                                class="bold">ボス前まで進める</span></li>ボスの扉は、開けたほうが良いボスと開けないほうが倒しやすいボスがいます。
+                                        <li><span
+                                                class="bold">獣性を貯める</span></li>壊れた獣の爪のL2で人形を殴りましょう。同時に血晶石を倉庫にすべて入れておくと入手した血晶石がわかりやすくなります。
+                                        <li><span
+                                                class="bold">ボス前でタイトルに戻る</span></li>タイトルに戻ったら、一度「OFFLINE」を選択してホームに戻りましょう。ゲームを起動した時に初めから「OFFLINE」にカーソルが合うようになります。
+                                        <li><span
+                                                class="bold">本体の設定からバックアップを取る</span></li>USBを使った方法が主流ですが、追加でお金がかかってしまうので、PS+で使えるオンラインストレージで十分だと思います。オンラインストレージを使う際には、必ず自動バックアップの設定を切りましょう。
+                                        <li><span
+                                                class="bold">ボスを倒す</span></li>獣性の丸薬と松脂を付けて、倒しましょう。
+                                        <li><span
+                                                class="bold">バックアップを本体に戻す</span></li>
+                                    </ol>
+                                    以下、5～6の繰り返し。<br><br>
+                                </p>
+                            </details>
+                            <br>
+                            <p>筋力に振っているビルドであれば、<span
+                                    class="red bold">呪われた重い深淵血晶</span>がおすすめです。逆に技量に振っていたり技量武器の場合には3デブの方が良い場合が多いです。<br>
+                                <br>主に筋力寄りの上質武器（ノコギリ鉈・獣狩りの斧・獣肉断ち・獣の爪）が対象</p>
+                            <ul>
+                                <li><span class="bold">9kv8xiyi</span></li>
+                                <span class="bold">放射：3層ボス（首無し、獣血の主）</span><br>
+                            </ul><br>
+                            目標は、<span
+                                class="red bold">「筋力補正を加算する+65・物理の攻撃力を加算する+15」</span>、高みを目指すなら愚者の<span
+                                class="bold">「HP最大時、物理を高める+5.7%」</span>を狙いましょう。ランク20の深淵血晶でなければ3デブを超えることはないので、深淵血晶でなければすぐにリセットしましょう。<br>
+                            <br>ちなみに、呪われた鋭い深淵血晶は存在しないため技量ビルドの人は愚者を除くのであれば3デブで終了となります。
+                        </div>
+                    </div>
 
+                    <aside id="mokuji">
+                        <div class="sidebar">
+                            <!-- <div class="mokuji-in"> -->
+                                <div class="mokuji">
+                                    <a href="#intro">はじめに</a>
+                                    <ul>
+                                        <li><a href="#what">血晶石マラソンとは</a></li>
+                                        <li><a href="#why">なんでマラソンするの？</a></li>
+                                        <li><a href="#how">マラソンができるようになるまで</a></li>
+                                    </ul>
+                                    <a href="#how">マラソンができるようになるまで</a>
+                                    <ol>
+                                        <li><a href="#first">本編で聖杯を入手</a></li>
+                                        <li><a href="#second">深度5までの聖杯ダンジョンを攻略</a></li>
+                                        <li><a href="#third">追加儀法の付いたダンジョンの生成</a></li>
+                                    </ol>
+                                    <a href="#about">血晶石について</a>
+                                    <ul>
+                                        <li><a href="#rank">血晶石のランク</a></li>
+                                        <li><a href="#option">血晶石の効果</a></li>
+                                        <li><a href="#curse">呪いの効果</a></li>
+                                    </ul>
+                                    <a href="#start">マラソンスタート！</a>
+                                    <ul>
+                                        <li><a href="#physics">1.強化の血晶石</a></li>
+                                        <li><a href="#hp">2.愚者</a></li>
+                                        <li><a href="#20">3.深淵血晶</a></li>
+                                    </ul>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </aside>
 
-        
-        <div class="main">
-            <div class="subtitle">
-                <p>マラソンをできるようになるまでは、大まかに3つの過程があります。
-                </p>
-            </div>
-
-            <div class="sentence">
-                <ol class="bold">
-                    <li>本編で<span class="red">聖杯</span>を入手</li>
-                    <li><span class="red">深度5</span>までの聖杯ダンジョンを攻略</li>
-                    <li><span class="red">追加儀法</span>の付いたダンジョンの生成</li>
-                </ol>
-
-                <p>普通に攻略すると、<span class="bold">10時間</span>ぐらいかかるのでのんびりやりましょう。ルートを覚えている人だったら、5時間ぐらいで終わるのかも。</p>
-            </div>
-
-
-            <div class="subtitle">
-                <h3 id="first">1.本編で<span class="red">聖杯</span>を入手</h3>
-            </div>
-
-            <div class="sentence">
-                <p>聖杯ダンジョンには<span class="bold red">聖杯</span>がなければ行くことができません。まずは、<span class="bold">本編</span>を進めて以下の聖杯を手に入れましょう。
-                </p>
-                
-                <table>
-                    <tr>
-                        <th>聖杯</th>
-                        <th>入手場所</th>
-                    </tr>
-                    <tr>
-                        <td><span class="red">トゥメル遺跡</span></td>
-                        <td>ボス：血に渇いた獣</td>
-                    </tr>
-                    <tr>
-                        <td><span class="red">病めるローラン</span></td>
-                        <td>ボス：アメンドーズ</td>
-                    </tr>
-                    <tr>
-                        <td><span class="red">イズの碑</span></td>
-                        <td>ボス：エーブリエタース</td>
-                    </tr>
-                </table>
-                
-                <p>聖杯の他に、本編でしか手に入らない素材があるので取っておきましょう。</p>
-
-                <table>
-                    <tr>
-                        <th>素材</th>
-                        <th>入手場所</th>
-                    </tr>
-                    <tr>
-                        <td>真珠ナメクジ</td>
-                        <td>ビルゲンワース</td>
-                    </tr>
-                    <tr>
-                        <td>生きているヒモ</td>
-                        <td>メンシスの悪魔：メンシスの脳</td>
-                    </tr>
-                </table>
-                <br>
-                
-                
-            </div>
-
-            <div class="subtitle">
-                <h3 id="second">2.<span class="red">深度5</span>までの聖杯ダンジョンを攻略</h3>
-            </div>
-
-            <div class="sentence">
-                <p><span class="bold red">深度5</span>の<span class="bold red">トゥメル=イル</span>、<span class="bold red">深きローラン</span>、<span class="bold red">イズ</span>まで攻略しましょう。道中での宝箱からは聖杯の生成や追加儀法に使うものがたくさんあるので寄り道もしましょう。<br>
-                    <br>
-                    各ダンジョン内で拾える素材
-                <details>
-                    <summary>開く</summary>
-                    <span class="blue">青文字：灯り前脇道</span><br>
-                    黒文字：本道<br>
-                    <span class="red">赤文字：ボス前脇道</span><br>
-                    
-                    <table width="100%">
-                    <tr>
-                        <th>聖杯</th>
-                        <th>第一層</th>
-                        <th>第二層</th>
-                        <th>第三層</th>
-                        <th>第四層</th>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&5969a1e419" target="_blank">1.トゥメル遺跡</a></td>
-                        <td></td>
-                        <td>血【2】×2</td>
-                        <td>血【2】 ×2<br>
-                            カビ【1】×3<br>
-                            <span class="red"> カビ【1】×3</span><br>
-                            <span class="red">血【2】×4</span>
-                        </td>
-                        <td>&mdash;</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&c9e4cd9dd3" target="_blank">2.中央トゥメル遺跡</a></td>
-                        <td>血【2】×2	</td>
-                        <td><span class="blue">僻墓の聖杯<br>血【3】×3</span></td>
-                        <td><span class="blue">血【3】×6<br>聖者の手首×1<br>血【2】×5<br>カビ【2】×8</span><br>聖者の手首×2<br>血【3】 ×1
-                        </td>
-                        <td>&mdash;</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&1dd8b13551" target="_blank">3.深きトゥメル遺跡</a></td>
-                        <td>血【3】×1<br>聖者の手首 ×1</td>
-                        <td>血【3】×4<br>カビ【3】×8<br><span class="red">血【4】×2<br>霞削りの工房道具</span></td>
-                        <td>聖者の手首×2<br>血【4】<br><span class="red">カビ【3】×4<br>血【3】×2</span></td>
-                        <td>血【4】×5<br>カビ【3】×6<br>血【3】×2<br><span class="red">聖者の手首 ×3</span></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&1e5b3f0e98" target="_blank">4.呪われたトゥメルの冒涜</a></td>
-                        <td>血【4】×2<br><span class="red">血【4】×3</span></td>
-                        <td><span class="blue">カビ【4】×3<br>血【4】×5<br>血【5】</span><br>
-                            血【5】×2<br>カビ【4】x2<br>
-                        <span class="red">血【5】×3<br>病巣の臓器×2</span></td>
-                        <td>
-                            カビ【4】×4<br>血【5】×4<br>聖者の頭蓋×3<br>病巣の臓器×3<br>
-                        </td>
-                        <td>&mdash;</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&f021374c57" target="_blank">5.トゥメル＝イル</a></td>
-                        <td><span class="blue">血【5】</span><br>
-                        <span class="red">カビ【5】×2<br>血【5】×2</span></td>
-                        <td><span class="blue">カビ【5】×9<br>血【5】×4</span><br>
-                            血【5】×2<br>レッドゼリー<br>
-                        <span class="red">黄色い背骨×2<br>血【5】×5<br>レッドゼリー</span></td>
-                        <td><span class="blur">黄色い背骨×2</span></td>
-                        <td>&mdash;</td>
-                    </tr>
-                    
-                </table>
-                
-                <br>
-                <table width="100%">
-                    <tr>
-                        <th>聖杯</th>
-                        <th>第一層</th>
-                        <th>第二層</th>
-                        <th>第三層</th>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&9559d83387" target="_blank">4.病めるローラン</a></td>
-                        <td><span class="blue">カビ【4】<br>血【4】</span><br>
-                            血【5】x2<br>カビ【4】x2<br>
-                        <span class="red">血【4】×3<br>カビ【4】x2</span></td>
-                        <td><span class="blue">獣の爪<br>血【4】×2<br>血【5】×3<br>死血花のつぼみ ×5</span><br>
-                        <span class="red">血【4】×4</span></td>
-                        <td>
-                            血【5】<br>カビ【4】×3<br>
-                        <span class="red">ローランの落とし子×4<br>大輪の死血花×6</span></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&d4f2fe383f" target="_blank">5.深きローラン</a></td>
-                        <td><span class="blue">血【5】×3</span></td>
-                        <td>大輪の死血花×4<br>血【5】×3<br>レッドゼリー<br>ローランの落とし子×2
-                        <td><span class="blue">レッドゼリー</span></td>
-                    </tr>
-                </table>
-                <br>
-                <table width="100%">
-                    <tr>
-                        <th>聖杯</th>
-                        <th>第一層</th>
-                        <th>第二層</th>
-                        <th>第三層</th>
-                    </tr>
-                    <tr>
-                        <td><a href="https://kamikouryaku.net/bloodborne/?&3e4e83ffc0" target="_blank">5.イズの碑</a></td>
-                        <td>
-                        <span class="red">血【5】×3</span></td>
-                        <td>
-                            血【5】×2<br>真珠ナメクジ×2<br>
-                        <span class="red">真珠ナメクジ×2<br>血【5】×5</span></td>
-                        <td>黄色い背骨×3<br>カビ【5】×5<br>レッドゼリー×2<br>聖者の頭蓋×6<br>
-                        </td>
-                    </tr>
-                </table>
-            </details>
-            <br>
-                    僻墓は異常者装備が買えるようになるだけなので血晶石マラソンでは必要ありません。<br>
-                    <br>血晶石マラソンをするためには、<span class="bold">追加儀法</span>が付けられる<span class="bold red">汎聖杯</span>をダンジョン内で取得する必要があります。すぐに血晶石マラソンをしたい人は、<span class="red">オレンジ文字</span>の聖杯だけでOKです。
-                </p><br>
-                <table>
-                    <tr>
-                        <th>聖杯</th>
-                        <th>入手場所</th>
-                    </tr>
-                    <tr>
-                        <td><span class="red">トゥメル=イルの汎聖杯</span></td>
-                        <td>トゥメル＝イル　第二層 ボスドロップ</td>
-                    </tr>
-                    <tr>
-                        <td>不吉なるトゥメル=イルの汎聖杯</td>
-                        <td>トゥメル＝イル　第三層 ショップ</td>
-                    </tr>
-                    <tr>
-                        <td><span class="red">深きローランの汎聖杯</span></td>
-                        <td>深きローラン　第三層　ボスドロップ</td>
-                    </tr>
-                    <tr>
-                        <td>不吉なる深きローランの汎聖杯</td>
-                        <td>深きローラン　第三層　ショップ</td>
-                    </tr>
-                    <tr>
-                        <td><span class="red">イズの汎聖杯</span></td>
-                        <td>イズの碑　第三層　ボスドロップ</td>
-                    </tr>
-                    <tr>
-                        <td>不吉なるイズの汎聖杯</td>
-                        <td>イズの碑　第三層　ショップ</td>
-                    </tr>
-                </table><br>
-                <p>聖杯文字検索における参加条件は、<span class="bold red">「参加する聖杯を持っていること」</span>なので、汎聖杯は<span class="bold">作成する必要はありません</span>。<br>
-                    <br>
-                    <details><summary>各ダンジョンの特徴について</summary>
-                    それぞれの聖杯で落とす血晶石の形は決まってます。<br><br>
-                    <table>
-                    <tr>
-                        <td>トゥメル=イル</td>
-                        <td>放射＊</td>
-                    </tr>
-                    <tr>
-                        <td>僻墓</td>
-                        <td>三角△</td>
-                    </tr>
-                    <tr>
-                        <td>深きローラン</td>
-                        <td>欠損☽</td>
-                    </tr>
-                    <tr>
-                        <td>イズ</td>
-                        <td>三角△</td>
-                    </tr>
-                </table>
-                <p>基本的に二つ名武器を含めれば、どの武器も放射放射三角（＊＊△）の組み合わせがあるので物理型であればトゥメル=イルとイズだけでひとまずはOKということです。しかし、神秘用の血晶石を集める際に深きローランに行ったり、二つ名武器や強力なカレル文字を手にいるれる際に僻墓や不吉なる聖杯に行く可能性があるので入手していて損はありません。
-                </p>
-                
-                </details>
-                <br>
-
-                <h3 id="third">3.<span class="red">追加儀法</span>の付いたダンジョンの生成</h3>
-                <p><span class="bold">汎聖杯</span>を使ってダンジョンをランダム生成する際には、<span class="bold red">追加儀法</span>をつけて生成できます。追加儀法をつけることでダンジョンの難易度が上がるかわりに、落とす<span class="bold">血晶石のランク</span>が上がります。<br>
-                    <br>
-                    基本的に、血晶石マラソンでは<span class="bold red">死臭の供儀、</span><span class="bold red">腐臭の供儀、</span><span class="bold red">呪い</span>の追加儀法をつけて周回します。
-                </p>
-                <br>
-                <details>
-                <summary>追加儀法の効果について</summary>
-                <ul>
-                    <li>死臭の供儀</li>効果：一部の敵が強化（赤いオーラ化）&その敵が落とす血晶石のランクUP
-                    <li>腐臭の供儀</li>効果：一部の敵が追加&その敵が落とす血晶石のランクUP
-                    <li>呪い</li>効果：プレイヤーHPが半減&呪われた血晶石化
-                    <li>不吉</li>効果：プレイヤーが侵入できるようになる
-                </ul>
-
-                </details>
-                <br>
-                <p>こちらは聖杯と違って、参加条件が<span class="bold red">「過去に対応した追加儀法を作成したことがある」</span>なので汎聖杯を使って<span class="bold">追加儀法付きの聖杯を作成しましょう</span>。（深度は4でも5でもOK）<br>また、追加儀法の素材は二週目以降に啓蒙ショップに並ぶので、一週目ならダンジョン内で集めましょう。
-                </p>
-                <br>
-                <details><summary>追加儀法に必要な素材</summary>
-                <p>深度5における必要素材です。</p>
-                <ul>
-                    <li>死臭</li>素材：聖者の頭蓋　6個<br>場所：イズの碑　第三層　岩石の先の扉（6個）・呪われたトゥメルの冒涜　第三層（3個）
-                    <li>腐臭</li>素材：病巣の臓器　6個<br>場所：呪われたトゥメルの冒涜　第二層　ボス前脇道（2個）・第三層（3個）
-                    <li>呪い</li>素材：ローランの落とし子　3個<br>場所：病めるローラン　第三層　ボス前脇道（4個）・深きローラン　第二層（2個）
-                </ul>
-                </details>
-                <br>
-            </div>
-        </div>
-
-        <div class="title">
-            <h2 id="about">血晶石について</h2>
-        </div>
-        <div class="main">
-            <p>ここまで来たら、地底人になるための準備は整いました！ここで、今後大量に入手するであろう<span class="blood bold">血晶石</span>について軽く説明します。<br>
-                <br>
-                <h3 id="rank">血晶石のランク</h3><p></p>血晶石には、ランク1～20まであり、そのランクに応じて<span class="bold">アイテムの名前</span>が変わります。この名前を見て、目当てなものなのかを瞬時に判断できるようになりましょう！</p>
-                <br>
-                <table>
-                    <tr>
-                        <th>アイテム名</th>
-                        <th>ランク</th>
-                    </tr>
-                    <tr>
-                        <td>血晶石【1】</td>
-                        <td>1～4</td>
-                    </tr>
-                    <tr>
-                        <td>血晶石【2】</td>
-                        <td>5～7</td>
-                    </tr>
-                    <tr>
-                        <td>血晶石【3】</td>
-                        <td>8～10</td>
-                    </tr>
-                    <tr>
-                        <td>濡血晶【4】</td>
-                        <td>11～13</td>
-                    </tr>
-                    <tr>
-                        <td>濡血晶【5】</td>
-                        <td>14～16</td>
-                    </tr>
-                    <tr>
-                        <td>濡血晶【6】</td>
-                        <td>17～19</td>
-                    </tr>
-                    <tr>
-                        <td>深淵血晶</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-                <br>
-                <p>ひとまず、<span class="bold">濡血晶【6】</span>だったら<span class="bold">17以上</span>、<span class="bold">深淵血晶</span>だったら<span class="bold">20</span>ということを覚えておきましょう！</p>
-                <br>
-                <h3 id="option">血晶石の効果</h3>
-                <p>
-                <span class="blood">血晶石</span>には、計3つの<span class="bold">オプション（効果）</span>をつけることができ、それらには<span class="red">バフの効果</span>と<span class="blue">デバフの効果</span>があります。
-                <br>
-                <p>血晶石マラソンでは2つのオプションに<span class="red">バフの効果</span>を付けるのですが、世間では一つ目の効果を<span class="bold">1op</span>（オプション）、二つ目の効果を<span class="bold">2op</span>と呼ぶらしいです。それぞれ、1opと2opに付く効果は主に決まっています。
-                </p><br>
-                <details><summary>主に使う1opに付く効果</summary>
-                
-                <table>
-                    <tr>
-                        <th>アイテム名</th>
-                        <th>効果</th>
-                        <th>最大値</th>
-                        <th>主な入手先</th>
-                    </tr>
-                    <tr>
-                        <td>強化の血晶石</td>
-                        <td>物理の攻撃力を高める</td>
-                        <td>27.2%</td>
-                        <td>3デブ</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">特化の血晶石</td>
-                        <td>重打のみ攻撃力を高める</td>
-                        <td>32.6%</td>
-                        <td rowspan="2">死体の巨人</td>
-                    </tr>
-                    <tr>
-                        
-                        <td>刺突のみ攻撃力を高める</td>
-                        <td>32.6%</td>
-                    </tr>
-                    <tr>
-                        <td>血質の血晶石</td>
-                        <td>血の攻撃力を高める</td>
-                        <td>32.6%</td>
-                        <td>血に渇いた獣、銃デブ</td>
-                    </tr>
-                    <tr>
-                        <td>神秘の血晶石</td>
-                        <td>神秘の攻撃力を高める</td>
-                        <td>27.2%</td>
-                        <td>エーブリエタース</td>
-                    </tr>
-                    <tr>
-                        <td>炎の血晶石</td>
-                        <td>炎の攻撃力を高める</td>
-                        <td>27.2%</td>
-                        <td>旧主の番犬</td>
-                    </tr>
-                    <tr>
-                        <td>雷光の血晶石</td>
-                        <td>雷光の攻撃力を高める</td>
-                        <td>27.2%</td>
-                        <td>ローランの黒獣</td>
-                    </tr>
-                    <tr>
-                        <td>全強化の血晶石</td>
-                        <td>全ての攻撃力を高める</td>
-                        <td>23.6%</td>
-                        <td>ロマ、アメンドーズ</td>
-                    </tr>
-                    <tr>
-                        <td>重い血晶石</td>
-                        <td>筋力補正を加算する</td>
-                        <td>+65</td>
-                        <td>獣血の主</td>
-                    </tr>
-                    <tr>
-                        <td>鋭い血晶石</td>
-                        <td>技術補正を加算する</td>
-                        <td>+27.2</td>
-                        <td>旧主の番人</td>
-                    </tr>
-                    <tr>
-                        <td>暖かな血晶石</td>
-                        <td>血質補正を加算する</td>
-                        <td>+27.2</td>
-                        <td>血に渇いた獣、銃デブ</td>
-                    </tr>
-                    <tr>
-                        <td>冷たい血晶石</td>
-                        <td>神秘補正を加算する</td>
-                        <td>+65</td>
-                        <td>トゥメルの末裔、古老</td>
-                    </tr>
-                    <tr>
-                        <td>一撃の血晶石</td>
-                        <td>溜め攻撃力を高める</td>
-                        <td>36.3%</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>脈動する血晶石</td>
-                        <td>HPが回復し続ける</td>
-                        <td>+5</td>
-                        <td>炎の魔術師</td>
-                    </tr>
-
-                </table>
-                </details>
-                <br>
-                <details><summary>主に使う2opに付く効果</summary>
-                
-                <table>
-                    <tr>
-                        <th>効果</th>
-                        <th>最大値</th>
-                        <th>主な入手先</th>
-                    </tr>
-                    <tr>
-                        <td>HP最大時攻撃力を高める</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>   
-                    <tr>
-                        <td>物理を高める攻撃力を高める</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>  
-                    <tr>
-                        <td>HP瀕死時攻撃力を高める</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>  
-                    <tr>
-                        <td>隙をつく攻撃力を高める</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>  
-                    <tr>
-                        <td>溜め攻撃力を高める</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>  
-                    <tr>
-                        <td>物理の攻撃力を加算する</td>
-                        <td></td>
-                        <td>トゥメル、ローラン、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>血の攻撃力を加算する</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>神秘の攻撃力を加算する</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>炎の攻撃力を加算する</td>
-                        <td></td>
-                        <td>ローラン、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>雷光の攻撃力を加算する</td>
-                        <td></td>
-                        <td>ローラン、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>遅効毒の効果を加算する</td>
-                        <td></td>
-                        <td>ローラン、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>劇毒の効果を加算する</td>
-                        <td></td>
-                        <td>ローラン、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>HPが回復し続ける</td>
-                        <td></td>
-                        <td>ローラン</td>
-                    </tr>
-                    <tr>
-                        <td>リゲイン量を高める</td>
-                        <td></td>
-                        <td>ローラン</td>
-                    </tr>
-                    <tr>
-                        <td>スタミナ消費を抑える</td>
-                        <td></td>
-                        <td>トゥメル、イズ</td>
-                    </tr>
-                    <tr>
-                        <td>武器耐久度を加算する</td>
-                        <td></td>
-                        <td>トゥメル</td>
-                    </tr>
-                    
-                </table>
-                </details>
-                <br>
-            </p>
-            <h3 id="curse">呪いの効果</h3>
-            <p><span class="bold red">呪いの追加儀法</span>によって、入手できる<span class="blood bold">呪われた血晶石</span>には呪いと呼ばれる<span class="blue bold">デバフ効果</span>が付きます。効果は計6つあります。</p>
-            <ul>
-                    <li><span class="red">スタミナ消費</span>が増える（<span class="bold">スタマイ</span>）</li>
-                    <li><span class="red">武器耐久度</span>を減算する（<span class="bold">耐マイ</span>）</li>
-                    <li><span class="red">耐眷属の攻撃力</span>を弱める（）</li>
-                    <li><span class="red">耐獣の攻撃力</span>を弱める（<span class="bold">獣マイ</span>）</li>
-                    <li><span class="red">全ての攻撃力</span>を弱める（<span class="bold">全マイ</span>）</li>
-                    <li><span class="red">HP</span>が減り続ける（<span class="bold">HPマイ</span>）</li>
-            </ul> 
-            <p>操作に支障をきたしにくい<span class="bold red">スタマイ</span>が<span class="bold">あたり</span>です。次点で、修理を代償とした<span class="bold">耐マイ</span>、対象が少ない<span class="bold">眷マイ</span>が<span class="bold">あたり</span>だと思います。<br>
-            
-            <details>
-                <summary>眷属の敵</summary>
-                眷属
-                <ul>
-                    <li>エーブリエタース</li>
-                    <li>ロマ</li>
-                    <li>星界からの使者（大）</li>
-                    <li>星界からの使者</li>
-                    <li>脳喰らい</li>
-                    <li>瞳の苗床</li>
-                    <li>蛍花</li>
-                    <li>学徒</li>
-                    <li>星の子ら</li>
-                </ul>
-                参考：<a href="https://bloodborne.swiki.jp/index.php?%E7%9C%B7%E5%B1%9E" target="_blank">Bloodborne設定考察 Wiki　眷属</a>
-                </details><br>
-                <span class="bold">獣マイ</span>は獣の対象が多すぎるため、扱いにくいと思います。<br>
-                <br>
-            <span class="bold blue">HPマイ</span>は常に毒状態で戦うようなものであり、<span class="bold blue">全マイ</span>は文字の通り本末転倒なのではずれです。</p>
-            <br>
-            <details><summary>呪いの効果量</summary>
-            <table>
-                <tr>
-                    <th>呪い効果</th>
-                    <th>最小値</th>
-                    <th>最大値</th>
-                </tr>
-                <tr>
-                    <td>スタミナ消費が増える（スタマイ）</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>武器耐久度を減算する（耐マイ）</td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <td>耐眷属の攻撃力を弱める（眷マイ）</td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <td>耐獣の攻撃力を弱める（獣マイ）</td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <td>全ての攻撃力を弱める（全マイ）</td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-                    <tr>
-                    <td>HPが減り続ける（HPマイ）</td>
-                    <td></td>
-                    <td></td>
-                    </tr>
-            </table> 
-            </details>
-            <br>
-            <br>
-            <div class="title">
-            <h2 id="start">マラソンスタート！</h2></div><br>
-            ひとまずは、汎用性が高い物理の血晶石を手に入れましょう。
-            <br>
-            
-            <h3 id="physics">1.強化の血晶石</h3>
-            <span class="bold">3デブ</span>産の<span class="bold red">「物理の攻撃力を高める」強化の濡血晶</span>は、無条件かつ物理を高めてくれるため汎用性が高いです。<br>
-            形状は、<span class="bold">放射放射三角（＊＊△）</span>のものを集めましょう。
-            <ul>
-                <br>
-                <li><span class="bold">9kv8xiyi</span></li>
-                <span class="bold">放射：一層ボス（3デブ）</span><br>
-                一層灯りから扉を開けて、左のはしごを進みレバー部屋へ。レバーを開けたら橋から右に落ちてボス部屋へ。
-                <li><span class="bold">nkdye4zx</span></li>
-                <span class="bold">三角：一層ボス（3デブ）</span><br>
-                一層灯りから右に行ってレバー部屋へ。ボス部屋は小さめ。<br>レバー前の部屋の中央にはワープ罠があるので、アイテムが落ちている方を通るように。ワープ先は一層灯り正面の部屋。
-            </ul><br>
-            目標は、<span class="bold red">「物理の攻撃力を高める+27.2%」</span>です。
-            <p>3デブは、残酷な守り人2匹と守り人の長で構成されているボスです。武器は棍棒、鉈、銃を持っている三種類が存在し、銃持ちの射線を柱などを使って切りながら棍棒や鉈の攻撃をパリィするのが安定の攻略方法です。</p>
-            <br>
-            <details><summary>内臓攻撃について</summary>
-            内臓攻撃は、技術、プレイヤーのレベル、各種補正で決まる物理属性の刺突攻撃です。
-            <br>レベルは、15・30・45・60・80・100・120・140・160・200になると大幅に強化されるので育成の参考にしてください。技術は50まで安定して増加していきます。
-            <br><br>
-            仕込み杖の変形後には、技術補正+15とノコギリ特効が付いているため、内臓攻撃専用の武器として優秀です。血晶石は、3デブ産の物理血晶を付けることから始め、副産物として取得できる刺突の特化血晶石で染めていくことが目標となります。最終火力では、刺突の貞子愚者の方が火力は出ますが、代用としては十分すぎる火力が出ます。また、内臓攻撃は武器の耐久値に依存せず壊れていても威力は変わらないため、耐マイでも大丈夫です。<br>ちなみに、トゥメルの3デブをワンパンできるようになるためには、レベル200、技術50、貞子愚者刺突×2、3デブ産刺突×1、爪痕×3程度で可能になります。
-            <br><br>
-            参考：<a href="https://kamikouryaku.net/bloodborne/?&caa8ed794b" target="_blank">Bloodborne(ブラッドボーン) | 神攻略wiki　内臓攻撃</a>
-        </details><br>
-            <p>3デブは副産物として、トゥメルでは特化、イズでは神秘、炎、雷光、特化をドロップします。確率はとても低いですが、血質、全強化なども落とします。どれも愚者までの繋ぎとして使えるため、どのビルドでもマラソンは3デブからが良いと思います。
-            </p>
-            <br>
-            <h3 id="hp">2.愚者</h3>
-            <p>そろそろ、3デブを内蔵攻撃でワンパンしてきたくなる頃合いだと思います。<br>3デブの副産物として出る刺突の特化血晶石は最大<span class="bold">+32.6%</span>で、強化の血晶石から切り替えるだけでも大きく内蔵攻撃を高めることができます。<br><br>
-                しかし、これを超える血晶石が条件付きで存在します。それが、2opに付く<span class="bold red">愚者の効果「HP最大時、物理を高める」</span>です。<br>
-                この効果は、1opに付いている効果に乗算で計算されるため、1opに「攻撃力を高める+28.7%」、2opに「HP最大時物理を高める+5.5%」が付くと<br>
-                <br>1.287×1.055=1.357..<br>
-                <br>と計算でき、<span class="bold red">35.7%</span>の攻撃力アップが見込めます。3デブ産から全て乗り換えることで、<span class="bold">計9.3%</span>アップします。<br>
-                基本的に、<span class="bold red">2op愚者は1opだけの血晶石の上位互換</span>になります。<br>
-                <br>これだけ見ると<span class="bold red">「愚者一択！」</span>と考えがちですが、ここで忘れてはいけないのは<span class="bold blue">「HP最大時」</span>という条件があることです。<br>
-                <span class="bold">常にHPが最大になるように輸血液で回復しなければなりませんし、HPが最大で無ければ、3デブ産の<span class="blue">下位互換</span>です。</span>
-                <br>無条件で高倍率のバフをできる3デブ産の使いやすさがわかると思います。<br><br>
-                <ul><li><span class="bold">qjpktusu</span></li>
-                <span class="bold">放射：一層灯り脇道（オーラ貞子）</span><br>
-                一層なのですぐにマラソン可能。
-                <li><span class="bold">7enpbrta</span></li><span class="bold">放射：二層灯り先部屋、左奥（オーラ貞子）</span><br>
-                <li><span class="bold">s3xhw58s</span></li><span class="bold">放射：三層灯り先部屋、右奥（オーラ貞子）</span><br>
-                三層だけど灯りから近いのでおすすめ。
-            </ul><br>
-            <p>
-                雑魚マラソンは、雑魚を倒して<span class="bold">「狩人の確かな徴」</span>を使って灯りに戻るを繰り返します。ボスと違って<span class="bold">発見力</span>が反映されるため、<span class="bold">カレル文字<span class="bold red">「輝き」</span></span>と<span class="bold red">「苗床」</span>を装備しましょう。<br>
-                <br>
-                貞子マラソンでは、<span class="bold">ゆっくり背後まで近づいて強攻撃バクスタ</span>を入れます。
-            </p>
-
-            目標は、<span class="bold">強化</span>なら<span class="bold red">「物理の攻撃力を高める+21%・HP最大時、物理を高める+12%」</span>、<span class="bold">特化</span>なら<span class="bold red">「重打or刺突の攻撃力を高める+25.2%・HP最大時、物理を高める+12%」</span>。<br>
-            ただし、貞子のメインドロップは強化なので特化は結構時間がかかります。<br><br>
-            放射が集まったら、三角を集めに行きましょう。
-            <br>
-            </p>
-            <ul>
-                <li><span class="bold">u4rmh8dr</span></li>
-                <span class="bold">三角：死体の巨人（鎖）</span><br>
-                一層灯りから左に行って脳喰らいがいるレバー部屋へ。レバー部屋前の広間にワープ罠があるので注意。
-            </ul>
-            <br>
-            <p>三角の特化愚者は、イズの死体の巨人から主にドロップします。</p><br>
-            <details><summary>死体の巨人（鎖）について</summary>
-            <table>
-                <tr>
-                    <th>弱点</th>
-                    <th>抵抗</th>
-                </tr>
-                <tr>
-                    <td>刺突・雷</td>
-                    <td>重打・神秘</td>
-                </tr>
-            </table>
-            <p>左鎌の後に遅れてくる背中の鎖が特徴的なボス。慣れるまでは何度も回避硬直のカウンターで死ぬことでしょう。<br>
-            基本的に、鎖は鎌の攻撃と同時に後ろに回避すれば当たりません。ある程度距離が離れていれば、後ろ歩きだけでも避けられます。その後の隙を攻撃しましょう。<br>
-            右の鉄球の叩きつけも、右回りしていれば当たりません。しかし、叩きつける回数が1～4回のランダムなので、次の攻撃が来ないのを確認してから攻撃しましょう。<br>
-            HPが半分を切ると衝撃波を出す叩きつけと、鉄球からの鎖攻撃が追加されます。衝撃波は叩きつけのタイミングで前ロリすると衝撃波に引っかかるので、衝撃波の外側に回避しましょう。<br>
-
-            足を数回殴ると内蔵攻撃を入れることができます。モーションが単純な前半に左足を狙い内臓攻撃を入れましょう。腫瘍は後半に壊すとおすすめです。
-
-            </p>
-            
-            <div class="subtitle">おすすめ武器</div>
-            <ul>
-                <li>ノコギリ鉈・槍</li>
-                変形前R1の隙の少なさが優秀で、連続叩きつけの間を殴れる。
-                <li>ルドウィークの聖剣</li>
-                刺突が弱点なので変形後溜めR2が良い火力。攻撃判定が敵に当たる手前にあるので、腫瘍が壊しにくいので少し使いにくいかも。
-                <li>教会の杭</li>
-                変形前R1→R2のコンボが刺突で良い感じ。腫瘍に当たるとすぐに破裂してしまうため、後半に時間がかかってしまうことがある。R2のモーション中にカウンターを食らうことがあるので注意。
-            </ul>
-            </details>
-            <br><br>
-            <h3 id="20">3.深淵血晶</h3>
-            <p>3デブを揃えた時点でも相当強いですが、さらなる高みを目指すために<span class="red bold">深淵血晶</span>の厳選が必要になってきます。<span class="bold">深淵血晶</span>は、最高ランクの血晶石ですが、<span class="bold">第3層、第4層のボス</span>からしかドロップしません。そのため、マラソン効率が一気に落ちます。<br>
-            <br>そこで、良く使われるのが<span class="red bold">バックアップマラソン</span>と呼ばれるものです。深淵血晶を落とす<span class="bold">ボスの前でバックアップ</span>を取り、良い血晶石が出なかったらバックアップを読み込み、<span class="bold">何度もボスだけを倒す</span>というものです。一言で言えば、<span class="bold red">リセマラ</span>です。<br>
-            （正攻法ではないので、そこだけは注意です。また、マラソン中血の遺志が溜まらないのでマラソン感が出ないのも悲しい。）</p>
-            <br>
-            <details><summary>バックアップマラソンの方法</summary>
-            <p><ol>
-                <li><span class="bold">ボス前まで進める</span></li>ボスの扉は、開けたほうが良いボスと開けないほうが倒しやすいボスがいます。
-                <li><span class="bold">獣性を貯める</span></li>壊れた獣の爪のL2で人形を殴りましょう。同時に血晶石を倉庫にすべて入れておくと入手した血晶石がわかりやすくなります。
-                <li><span class="bold">ボス前でタイトルに戻る</span></li>タイトルに戻ったら、一度「OFFLINE」を選択してホームに戻りましょう。ゲームを起動した時に初めから「OFFLINE」にカーソルが合うようになります。
-                <li><span class="bold">本体の設定からバックアップを取る</span></li>USBを使った方法が主流ですが、追加でお金がかかってしまうので、PS+で使えるオンラインストレージで十分だと思います。オンラインストレージを使う際には、必ず自動バックアップの設定を切りましょう。
-                <li><span class="bold">ボスを倒す</span></li>獣性の丸薬と松脂を付けて、倒しましょう。
-                <li><span class="bold">バックアップを本体に戻す</span></li>
-            </ol>
-            以下、5～6の繰り返し。<br><br>
-        </p>
-            </details>
-            <br>
-            <p>筋力に振っているビルドであれば、<span class="red bold">呪われた重い深淵血晶</span>がおすすめです。逆に技量に振っていたり技量武器の場合には3デブの方が良い場合が多いです。<br>
-            <br>主に筋力寄りの上質武器（ノコギリ鉈・獣狩りの斧・獣肉断ち・獣の爪）が対象</p>
-                <ul>
-                <li><span class="bold">9kv8xiyi</span></li>
-                <span class="bold">放射：3層ボス（首無し、獣血の主）</span><br>
-                </ul><br>
-                目標は、<span class="red bold">「筋力補正を加算する+65・物理の攻撃力を加算する+15」</span>、高みを目指すなら愚者の<span class="bold">「HP最大時、物理を高める+5.7%」</span>を狙いましょう。ランク20の深淵血晶でなければ3デブを超えることはないので、深淵血晶でなければすぐにリセットしましょう。<br>
-                <br>ちなみに、呪われた鋭い深淵血晶は存在しないため技量ビルドの人は愚者を除くのであれば3デブで終了となります。
-        </div>
-        
-    </div>
-    
-</body>
-
-</html>
+                </body>
+            </html>

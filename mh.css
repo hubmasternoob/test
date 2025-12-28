@@ -12,7 +12,7 @@ p {
     padding: 10px;
     border-bottom: solid 3px gray;
     position: relative;
-    /* min-width: 1680px; */
+    min-width: 70px;
 
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
@@ -43,10 +43,10 @@ body {
     margin: 0px;
 
     padding: 5% 5%;
-    max-width: 1000px;
+    
     border-radius:10px;
-    /* max-width: 700px; */
-    width: 70%;
+    width: 700px; 
+    /* width: 70%; */
 }
 
 .main {
@@ -107,13 +107,21 @@ table th{
     background-color: #dfe0db;
 }
 table td{
-    
     background-clip: content-box; 
+    
 }
 
 table th, table td {
     border: solid 1px black;
     /*実線 1px 黒*/
+}
+
+table .bg-white{
+    background-color: #ffffff;
+}
+
+table .bg-red{
+    background-color: #fcdada;
 }
 
 /* th:empty, td:empty{background-image: linear-gradient(to left bottom, transparent calc(50% - 1px), #000 calc(50% - .5px), #000 calc(50% + .5px), transparent calc(50% + 1px), #fff);
