@@ -19,16 +19,17 @@ p {
     font-style: normal;
 }
 .selectlink{
-  margin: 30px 0px 0px;
-  padding: 15px;
-  border: 2px #ddd solid;
-  border-radius: 3px;
-  background-color: #fff;
+    font-family: "DotGothic16", sans-serif;
+    padding: 15px;
+    border: 2px #ddd solid;
+    border-radius: 3px;
+    background-color: #fff;
 }
 
 .selectlink:hover{
-  border: 2px #333 solid;
-  background-color: #eee;
+    padding: 15px;
+    border: 2px #333 solid;
+    background-color: #eee;
 }
 body {
     background-color: ;
